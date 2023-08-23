@@ -19,6 +19,7 @@ class Map
 
         };
 
+
         //Constructor that creates an empty map
         Map() {
             set_map();
@@ -32,7 +33,7 @@ class Map
                         map[i][y] = '|';
                     }
                     else {
-                        map[i][y] = '.';
+                        map[i][y] = ' ';
                     }
                 }
             }
