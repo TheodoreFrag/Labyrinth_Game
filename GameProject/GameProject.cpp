@@ -10,11 +10,10 @@ using namespace std;
 
 int main()
 {
-
+   //Create a object and with that initialize the constructor
    Char_move obj;
 
    return 0;
-
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
