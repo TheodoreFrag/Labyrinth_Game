@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {
-
+   //Create a object and with that initialize the constructor
    Char_move obj;
 
    return 0;
