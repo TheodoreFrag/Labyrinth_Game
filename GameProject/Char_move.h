@@ -27,7 +27,7 @@ public:
             system("cls");
             switch (c) {
             case KEY_UP:
-                map[x][y] = '.';
+                map[x][y] = ' ';
                 x--;
                 if (map[x][y] == '|' || map[x][y] == '-') {
                     x++;
@@ -39,7 +39,7 @@ public:
                 }
                 break;
             case KEY_DOWN:
-                map[x][y] = '.';
+                map[x][y] = ' ';
                 x++;
                 if (map[x][y] == '|' || map[x][y] == '-') {
                     x--;
@@ -51,7 +51,7 @@ public:
                 }
                 break;
             case KEY_LEFT:
-                map[x][y] = '.';
+                map[x][y] = ' ';
                 y--;
                 if (map[x][y] == '|' || map[x][y] == '-') {
                     y++;
@@ -63,7 +63,7 @@ public:
                 }
                 break;
             case KEY_RIGHT:
-                map[x][y] = '.';
+                map[x][y] = ' ';
                 y++;
 
                 if (map[x][y] == '|' || map[x][y] == '-') {
