@@ -22,8 +22,6 @@ public:
 
         int c;
         while (1)
-
-
         {
 
             show_map();

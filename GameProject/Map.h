@@ -44,23 +44,23 @@ class Map
             }
         };
 
-        //Generate Layout
-        void map_generator()
-        {
+        ////Generate Layout
+        //void map_generator()
+        //{
 
-            for (int i = 1; i < width - 1; i++) {
-                for (int y = 1; y < height - 1; y++) {
-                    if (i == 1 && y == 1) {
-                        map[i][y] = road;
-                    }
-                    else if (map[i--][y] == road) {
+        //    for (int i = 1; i < width - 1; i++) {
+        //        for (int y = 1; y < height - 1; y++) {
+        //            if (i == 1 && y == 1) {
+        //                map[i][y] = road;
+        //            }
+        //            else if (map[i--][y] == road) {
 
 
-                    }
+        //            }
 
-                }
-            }
-        };
+        //        }
+        //    }
+        //};
         
 
         //Constructor that creates an empty map
