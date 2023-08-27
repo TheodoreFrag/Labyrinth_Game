@@ -6,6 +6,8 @@
 #define KEY_LEFT 75
 #define KEY_RIGHT 77
 
+#define player 'P'
+
 using namespace std;
 
 class Char_move: public Map
@@ -16,10 +18,12 @@ public:
 
         int x = 1 , y = 1;
 
-        map[x][y] = 'x';
+        map[x][y] = player ;
 
         int c;
         while (1)
+
+
         {
 
             show_map();
@@ -27,52 +31,52 @@ public:
             system("cls");
             switch (c) {
             case KEY_UP:
-                map[x][y] = ' ';
+                map[x][y] = road ;
                 x--;
-                if (map[x][y] == '|' || map[x][y] == '-') {
+                if (map[x][y] == wall_h || map[x][y] == wall_w ) {
                     x++;
-                    map[x][y] = 'x';
+                    map[x][y] = player ;
                     break;
                 }
                 else {
-                    map[x][y] = 'x';
+                    map[x][y] = player ;
                 }
                 break;
             case KEY_DOWN:
-                map[x][y] = ' ';
+                map[x][y] = road ;
                 x++;
-                if (map[x][y] == '|' || map[x][y] == '-') {
+                if (map[x][y] == wall_h || map[x][y] == wall_w) {
                     x--;
-                    map[x][y] = 'x';
+                    map[x][y] = player;
                     break;
                 }
                 else {
-                    map[x][y] = 'x';
+                    map[x][y] = player;
                 }
                 break;
             case KEY_LEFT:
-                map[x][y] = ' ';
+                map[x][y] = road ;
                 y--;
-                if (map[x][y] == '|' || map[x][y] == '-') {
+                if (map[x][y] == wall_h || map[x][y] == wall_w) {
                     y++;
-                    map[x][y] = 'x';
+                    map[x][y] = player;
                     break;
                 }
                 else {
-                    map[x][y] = 'x';
+                    map[x][y] = player;
                 }
                 break;
             case KEY_RIGHT:
-                map[x][y] = ' ';
+                map[x][y] = road;
                 y++;
 
-                if (map[x][y] == '|' || map[x][y] == '-') {
+                if (map[x][y] == wall_h || map[x][y] == wall_w ) {
                     y--;
-                    map[x][y] = 'x';
+                    map[x][y] = player;
                     break;
                 }
                 else {                    
-                    map[x][y] = 'x';
+                    map[x][y] = player;
                 }
                 break;
 
